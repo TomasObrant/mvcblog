@@ -10,6 +10,11 @@ return [
         'post',
         'pages',
         'contact',
+
+        'login',
+        'register',
+        'profile',
+        'logout',
 	],
 	'authorize' => [
 		//
