@@ -18,7 +18,8 @@ class AccountController extends Controller {
                 $this->view->message('error', $this->model->error);
             }
             $this->model->register($_POST);
-            $this->view->message('success', 'Регистрация завершена, подтвердите свой E-mail');
+            $this->view->message('success', 'Регистрация завершена');
+            $this->view->redirect('account/login');
         }
         $this->view->render('Регистрация');
     }

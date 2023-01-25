@@ -6,7 +6,6 @@ class View {
 
 	public $path;
 	public $route;
-	public $directory = '';
 	public $layout = 'default';
 
 	public function __construct($route) {
@@ -16,10 +15,7 @@ class View {
 
 	public function render($title, $vars = []) {
 		extract($vars);
-//        var_dump($this->directory);
-//        var_dump($_SERVER['REQUEST_URI']);
-		$path = 'application/views/'.$this->directory.$this->path.'.php';
-//        var_dump($path);
+		$path = 'application/views/'.$this->path.'.php';
 
 		if (file_exists($path)) {
 			ob_start();

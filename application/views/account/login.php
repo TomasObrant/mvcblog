@@ -16,7 +16,7 @@
                         <input type="password" class="form-control" name="password">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Вход</button>
+                <button type="submit" class="btn btnTheme btnShop text-white md-round py-md-3 px-md-4 py-2 px-3">Login</button>
             </form>
         </div>
     </div>

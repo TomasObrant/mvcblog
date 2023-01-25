@@ -15,29 +15,13 @@
                         <input type="text" class="form-control" name="login">
                     </div>
                 </div>
-                <?php if (isset($this->route['ref'])): ?>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Пригласил:</label>
-                            <input type="text" class="form-control" name="ref" value="<?php echo $this->route['ref']; ?>" readonly>
-                        </div>
-                    </div>
-                <?php else: ?>
-                    <input type="hidden" class="form-control" name="ref" value="none">
-                <?php endif; ?>
                 <div class="control-group form-group">
                     <div class="controls">
-                        <label>Номер кошелька:</label>
-                        <input type="text" class="form-control" name="wallet">
-                    </div>
-                </div>
-                <div class="control-group form-group">
-                    <div class="controls">
-                        <label>Пароль</label>
+                        <label>Пароль:</label>
                         <input type="password" class="form-control" name="password">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Регистрация</button>
+                <button type="submit" class="btn btnTheme btnShop fwEbold text-white md-round py-md-3 px-md-4 py-2 px-3">Registration</button>
             </form>
         </div>
     </div>

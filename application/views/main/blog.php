@@ -21,7 +21,6 @@
 					<div class="col-12 col-lg-9 order-lg-3">
 						<!-- content -->
 						<article id="content">
-<!--                            --><?php //debug($list) ?>
                             <?php if(empty($list)): ?>
                                 <p>The list of posts is empty</p>
                             <?php else: ?>
@@ -47,15 +46,7 @@
                             <?php endif; ?>
 
 							<div class="col-12 mb-sm-0 mb-6">
-								<!-- pagination -->
                                 <?php echo $pagination; ?>
-<!--								<ul class="list-unstyled pagination d-flex justify-content-center align-items-end">-->
-<!--									<li><a href="javascript:void(0);"><i class="fas fa-chevron-left"></i></a></li>-->
-<!--									<li class="active"><a href="javascript:void(0);">1</a></li>-->
-<!--									<li><a href="javascript:void(0);">2</a></li>-->
-<!--									<li>...</li>-->
-<!--									<li><a href="javascript:void(0);"><i class="fas fa-chevron-right"></i></a></li>-->
-<!--								</ul>-->
 							</div>
 						</article>
 					</div>

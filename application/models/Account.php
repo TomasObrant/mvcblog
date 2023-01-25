@@ -77,5 +77,13 @@ class Account extends Model
         return true;
     }
 
+    public function login($login) {
+        $params = [
+            'login' => $login,
+        ];
+        $data = $this->db->row('SELECT * FROM accounts WHERE login = :login', $params);
+        $_SESSION['account'] = $data[0];
+    }
+
 }
 

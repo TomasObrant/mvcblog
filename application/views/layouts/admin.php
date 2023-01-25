@@ -21,12 +21,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-<!--                        <li class="nav-item">-->
-<!--                            <a class="nav-link" href="/admin/add">-->
-<!--                            <i class="fa fa-fw fa-plus"></i>-->
-<!--                            <span class="nav-link-text">Добавить пост</span>-->
-<!--                            </a>-->
-<!--                        </li>-->
                         <li class="nav-item">
                             <a class="nav-link" href="/admin/post">
                                 <i class="fa fa-fw fa-product-hunt"></i>
@@ -40,9 +34,9 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/admin/user">
+                            <a class="nav-link" href="/admin/account">
                                 <i class="fa fa-fw fa-user"></i>
-                                <span class="nav-link-text">Users</span>
+                                <span class="nav-link-text">Accounts</span>
                             </a>
                         </li>
                         <li class="nav-item">

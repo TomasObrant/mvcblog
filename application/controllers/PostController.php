@@ -11,7 +11,6 @@ class PostController extends Controller {
     public function __construct($route) {
         parent::__construct($route);
         $this->view->layout = 'admin';
-        $this->view->directory = 'admin/';
     }
 
     public function indexAction() {

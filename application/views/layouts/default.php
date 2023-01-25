@@ -29,22 +29,16 @@
 <body>
 
 <!-- pageWrapper -->
-<div id="pageWrapper">
+<div id="pageWrapper" style="height: 100%">
     <!-- header -->
     <header id="header" class="position-relative">
         <!-- headerHolderCol -->
         <div class="headerHolderCol pt-lg-4 pb-lg-5 py-3">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-sm-4">
-                        <a href="javascript:void(0);" class="tel d-flex align-items-end"><i class="icon-call mr-2"></i>  Hotline: (602) 462 8889</a>
-                    </div>
-                    <div class="col-12 col-sm-4 text-center">
-                        <span class="txt d-block">Wellcome To Botanical Store</span>
-                    </div>
-                    <div class="col-12 col-sm-4">
+                    <div class="col-12 col-sm-6">
                         <!-- langListII -->
-                        <ul class="nav nav-tabs langListII justify-content-end border-bottom-0">
+                        <ul class="nav nav-tabs langListII justify-content-start border-bottom-0">
                             <li class="dropdown">
                                 <span>Currency: </span>
                                 <a class="d-inline dropdown-toggle text-uppercase" data-toggle="dropdown" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false">USD</a>
@@ -65,7 +59,35 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="col-12 col-sm-6 nav nav-tabs justify-content-end">
+
+
+
+
+                        <?php if (empty($_SESSION)): ?>
+                            <a class="txt d-block mr-10" href="/account/login">Login</a>
+                            <a class="txt d-block" href="/account/register">Registration</a>
+                        <?php else: ?>
+                            <a class="txt d-block ml-10" href="/account/logout">Logout</a>
+                        <?php endif; ?>
+
+
+
+
+
+
+
+<!--                        <a class="txt d-block mr-10" href="/account/login">Login</a>-->
+<!--                        <a class="txt d-block" href="/account/register">Registration</a>-->
+<!--                        <a class="txt d-block ml-10" href="/account/logout">Logout</a>-->
+<!--                        --><?php //var_dump($_SESSION); ?>
+                    </div>
                 </div>
+
+
+
+
+
             </div>
         </div>
         <!-- headerHolder -->
@@ -128,7 +150,7 @@
     <?php echo $content; ?>
 
     <!-- footer -->
-    <footer id="footer" class="overflow-hidden bg-dark">
+    <footer id="footer" class="overflow-hidden bg-dark vw-100">
         <div class="container">
             <div class="row">
                 <div class="col-12 copyRightHolder v-II text-center pt-md-3 pb-md-4 py-2">

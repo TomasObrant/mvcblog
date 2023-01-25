@@ -31,7 +31,7 @@ return [
     ],
     'blog/post/{id:\d+}' => [
         'controller' => 'main',
-        'action' => 'blog'
+        'action' => 'post'
     ],
     'pages' => [
         'controller' => 'main',
